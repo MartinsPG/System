@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup com JS</title>
+  <style>
+    /* Estilos básicos para a animação */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    /* Estilo inicial do popup */
+    #welcome-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5); /* Inicialmente pequeno */
+      opacity: 0; /* Inicialmente invisível */
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+      z-index: 1000;
+    }
+
+    /* Botão de fechar */
+    #close-popup {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #close-popup:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup que será exibido -->
+  <div id="welcome-popup">
+    <h2>Bem-vindo ao nosso site!</h2>
+    <p>Explore nosso conteúdo e aproveite!</p>
+    <button id="close-popup">Fechar</button>
+  </div>
+
+  <script>
+    // Obtém os elementos do popup e do botão de fechar
+    const popup = document.getElementById('welcome-popup');
+    const closeButton = document.getElementById('close-popup');
+
+    // Mostra o popup após 5 segundos
+    setTimeout(() => {
+      popup.style.opacity = '1';
+      popup.style.transform = 'translate(-50%, -50%) scale(1)';
+    }, 5000);
+
+    // Fecha o popup ao clicar no botão
+    closeButton.addEventListener('click', () => {
+      popup.style.opacity = '0';
+      popup.style.transform = 'translate(-50%, -50%) scale(0.5)';
+    });
+  </script>
+</body>
+</html>

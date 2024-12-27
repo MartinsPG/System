@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="../html-css/imagens do site/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../html-css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            width: 99%;
+            height: 99%;
+        }
+
+
+        .container {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            width: 100%;
+            min-height: 100vh;
+            background-size: 100vw 100vh;
+            font-family: monospace;
+        }
+
+
+        .formulario {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 7px;
+            width: 30%;
+            background-color: blueviolet;
+        }
+
+        .formulario > *{
+            padding: 0,5rem;
+            margin: 1rem auto;
+            display: block;
+            width: 100%;
+        }
+
+        @media(max-width: 720px) {
+            .formulario {
+                width: 45%;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .formulario input [type="button"] {
+            width: 50%;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            transition: all 0.3s ease-out;
+        }
+
+        .formulario input [type="button"]:hover {
+            background-color: navy;
+        }
+
+        .formulario input
+        .formulario textarea{
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+
+        .formulario textarea {
+            resize: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+ <div class="container">
+    <form action="" class="formulario">
+        <h2>Formulario</h2>
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Assunto">
+        <textarea name="" id="" cols="50" rows="5" placeholder="comentario"></textarea>
+        <input type="button" value="enviar">
+    </form>
+ </div>
+
+
+
+    <footer>
+        <p>&copy; Desenvolvido por Pedro</p>
+        <p> <img src="../html-css/midias/icone-instagram.png" alt="instagram"> / <a href="https://www.instagram.com/_.pmartins7/?next=%2F" target="_blank"> Instagram</a>  <img src="../html-css/midias/icone-github.png" alt="Facebook"> / <a href="https://github.com/MartinsPG" target="_blank"> GitHub</a></p>
+    </footer>
+</body>
+</html>

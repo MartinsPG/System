@@ -1,0 +1,11 @@
+Montar a parte visual do site 
+
+Python
+JavaScript
+Node
+
+Montar o banco com MySQL 
+Interligar front + back
+
+Criar as tabelas e campos no SQL
+Vincular
